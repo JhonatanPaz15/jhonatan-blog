@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="My English Learning Journey — Jhonatan David Caipa Paz" />
   <title>My English Learning Journey — Jhonatan David Caipa Paz</title>
+  
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -35,19 +38,94 @@
     }
     .header-inner { position: relative; z-index: 1; max-width: 680px; margin: auto; }
     .author-photo {
-      width: 90px;
-      height: 90px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid var(--gold);
+      border: 3px solid var(--gold);
       margin: 0 auto 1.5rem;
+      display: block;
     }
-    /* ... (el resto del CSS se mantiene igual) ... */
-    /* Por brevedad aquí, pero copia todo tu CSS original si quieres */
+    .blog-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .header-intro {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.75);
+      font-family: 'Cormorant Garamond', serif;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    /* Mantengo el resto del CSS original (resumido por tamaño) */
+    nav { background: var(--warm-white); border-bottom: 1px solid var(--border); padding: 0 2rem; position: sticky; top: 0; z-index: 100; }
+    main { max-width: 860px; margin: 0 auto; padding: 4rem 2rem; }
+    .intro-section { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 5rem; }
+    @media (max-width: 640px) { .intro-section { grid-template-columns: 1fr; } }
+    .reflection {
+      margin-top: 5rem;
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 16px;
+      padding: 3.5rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Mi Blog está cargando...</h1>
-  <p>Si ves este mensaje, refresca la página en 30 segundos.</p>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <img src="https://via.placeholder.com/110x110/7a5c3a/ffffff?text=JD" alt="Jhonatan David" class="author-photo" />
+      <span class="blog-label">Personal Blog</span>
+      <h1>My English Learning Journey</h1>
+      <p class="author-name">Jhonatan David Caipa Paz</p>
+      <p class="header-intro">Documenting my progress, challenges, and victories in learning English.</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Activities</a></li>
+      <li><a href="#">Reflections</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="intro-section">
+      <div class="intro-text">
+        <h2>Welcome to my English journey</h2>
+        <p>Este es mi blog personal donde comparto mi proceso de aprendizaje del inglés.</p>
+      </div>
+      <div class="quote-block">
+        <p>"The more you practice, the better you get."</p>
+        <cite>Jhonatan David</cite>
+      </div>
+    </div>
+
+    <!-- Aquí puedes seguir agregando tus secciones originales -->
+    <div class="reflection">
+      <h2>Reflection</h2>
+      <p>Estoy muy feliz de estar documentando este camino. ¡Gracias por acompañarme!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Jhonatan David Caipa Paz</p>
+  </footer>
+
 </body>
 </html>
